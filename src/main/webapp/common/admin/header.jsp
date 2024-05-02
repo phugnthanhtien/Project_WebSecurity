@@ -93,6 +93,7 @@ body {
 					</a>
 						<div class="dropdown-menu" aria-labelledby="notificationDropdown">
 							<!-- Thêm các thông báo khác tại đây -->
+							<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="/admin/alohcmute/profile/FriendRequestNotification">Xem tất cả thông báo</a>
 						</div></li>
@@ -119,6 +120,7 @@ body {
 
 				<form class="form-inline my-2 my-lg-0" id="searchForm"
 					action="/admin/alohcmute/find_friends" method="get">
+					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 					<div class="input-group input-group-sm">
 						<input type="text" class="form-control" placeholder="Search..."
 							id="searchInput" name="fullName">
@@ -148,5 +150,16 @@ body {
 		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script>
+   	 const csrfToken = document.cookie.replace(/(?:(?:^|.*;\s*)XSRF-TOKEN\s*\=\s*([^;]*).*$)|^.*$/, '$1');
+		var token = $("meta[name='_csrf']").attr("content");
+		var header = $("meta[name='_csrf_header']").attr("content");
+		$(document).ajaxSend(function(e, xhr, options) {
+			xhr.setRequestHeader({
+				...header,
+				'X-XSRF-TOKEN': csrfToken
+			}, token);
+		});
+	</script>
 </body>
 </html>
