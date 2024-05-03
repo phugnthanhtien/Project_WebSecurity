@@ -13,10 +13,11 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 public class SecurityWithCsrfCookieConfig {
 	@Bean
 	public SecurityFilterChain filterChain2(HttpSecurity http) throws Exception {
-		return http.csrf(csrf -> csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
+		return http
 				.headers(headers -> headers.xssProtection(Customizer.withDefaults())
 						.contentSecurityPolicy(csp -> csp.policyDirectives(
 								"default-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';")))
 				.authorizeRequests(authorize -> authorize.anyRequest().permitAll()).build();
 	}
+	
 }

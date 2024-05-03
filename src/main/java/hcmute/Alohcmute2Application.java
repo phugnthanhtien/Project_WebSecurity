@@ -10,6 +10,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.firewall.StrictHttpFirewall;
+import org.springframework.session.web.http.CookieSerializer;
+import org.springframework.session.web.http.DefaultCookieSerializer;
 
 import hcmute.config.CustomSiteMeshFilter;
 import hcmute.service.IStorageService;
@@ -45,15 +47,7 @@ public class Alohcmute2Application {
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		 http
-         .csrf(AbstractHttpConfigurer::disable)
-         .headers(headers -> 
-             headers
-                 .xssProtection(Customizer.withDefaults())
-                 .contentSecurityPolicy(
-                     contentSecurityPolicyConfig -> 
-                         contentSecurityPolicyConfig.policyDirectives("default-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';")
-                 )
-         );
+         .csrf(AbstractHttpConfigurer::disable);
 		return http.build();
 	}
 
@@ -64,5 +58,4 @@ public class Alohcmute2Application {
 		firewall.setAllowUrlEncodedDoubleSlash(true);
 		return firewall;
 	}
-
 }
