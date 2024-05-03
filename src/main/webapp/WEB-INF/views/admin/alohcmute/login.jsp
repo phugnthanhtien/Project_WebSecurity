@@ -82,6 +82,7 @@
                 </div>
                 <div class="card-body">
                     <form action="/login" method="post">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                         <div class="form-group">
                             <label for="username">Username:</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -103,5 +104,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+   	 const csrfToken = document.cookie.replace(/(?:(?:^|.*;\s*)XSRF-TOKEN\s*\=\s*([^;]*).*$)|^.*$/, '$1');
+		var token = $("meta[name='_csrf']").attr("content");
+		var header = $("meta[name='_csrf_header']").attr("content");
+		$(document).ajaxSend(function(e, xhr, options) {
+			xhr.setRequestHeader({
+				...header,
+				'X-XSRF-TOKEN': csrfToken
+			}, token);
+		});
+	</script>
+    
 </body>
 </html>
