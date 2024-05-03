@@ -17,7 +17,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Object> handleException(Exception e) {
         String errorId = UUID.randomUUID().toString();
         logger.error("Error ID " + errorId + ": " + e.getMessage(), e);
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+        return ResponseEntity.status(HttpStatus.GATEWAY_TIMEOUT)
                 .body("An error occurred. Error ID: " + errorId);
     }
 }
