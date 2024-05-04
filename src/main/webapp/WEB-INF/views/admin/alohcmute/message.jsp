@@ -3,7 +3,7 @@
 <%@ include file="/common/taglib.jsp"%>
 
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>">
 
 <style>
 .message-box {
@@ -79,8 +79,8 @@
 	</div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"></script>
 <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"></script>
 <script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"></script>

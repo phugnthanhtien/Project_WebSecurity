@@ -3,7 +3,7 @@
 <%@ include file="/common/taglib.jsp"%>
 
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>">
 
 <style>
 

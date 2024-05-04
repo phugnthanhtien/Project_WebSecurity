@@ -164,8 +164,8 @@ button.btn-primary {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
     Additional scripts go here if needed
     
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="<c:url value="/templates/user/js/jquery-3.6.4.min.js"/>"></script> -->
+	<script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"></script>
 	<!-- <script type="text/javascript">
 	    $(document).ready(function () {    	 
 	         $('#LoadCmt').submit(function (event) {

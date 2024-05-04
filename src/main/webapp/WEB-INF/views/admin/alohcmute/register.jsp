@@ -6,9 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Security-Policy" content=" "/>
 <title>Register - ALOHCMUTE</title>
 <link
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>"
 	rel="stylesheet">
 
 <style>
@@ -150,11 +151,9 @@ body {
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"></script>
+    <script src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"></script>
+    <script src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"></script>
 	<script>
    	 const csrfToken = document.cookie.replace(/(?:(?:^|.*;\s*)XSRF-TOKEN\s*\=\s*([^;]*).*$)|^.*$/, '$1');
 		var token = $("meta[name='_csrf']").attr("content");

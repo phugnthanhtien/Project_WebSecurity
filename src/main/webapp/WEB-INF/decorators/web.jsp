@@ -50,15 +50,10 @@
 
 
 	<!-- JS -->
-	<script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+	<script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"
 		type="text/javascript"></script>
 	<script
-		src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		src="<c:url value="/templates/user/js/ajax-1.12.9-popper.min.js"/>"
 		type="text/javascript"></script>
-	<script
-		src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		type="text/javascript"></script>
-
-
 </body>
 </html>

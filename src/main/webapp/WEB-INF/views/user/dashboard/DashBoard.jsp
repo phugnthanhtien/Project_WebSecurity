@@ -11,7 +11,7 @@
 <title>Dashboard</title>
 <!-- Thêm đường dẫn đến Bootstrap CSS -->
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
@@ -89,15 +89,15 @@
 	</div>
 
 	<!-- Thêm đường dẫn đến Bootstrap JS và Popper.js -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	<script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
 	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"
 		integrity="sha384-Uo4uZf5YFq9skXFlz/7tfL3LeOMV+9TBEU3z6HXL9hshHoL/TEZ9nbDlVT9vGxp"
 		crossorigin="anonymous"></script>
 	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 </body>
