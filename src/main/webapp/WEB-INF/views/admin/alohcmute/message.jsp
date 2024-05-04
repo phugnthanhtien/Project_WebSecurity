@@ -3,7 +3,7 @@
 <%@ include file="/common/taglib.jsp"%>
 
 <link rel="stylesheet"
-	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>">
+	href="<c:url value="/templates/user/css/bootstrap-5.0.2-bootstrap.min.css"/>">
 
 <style>
 .message-box {
@@ -83,4 +83,4 @@
 <script
 	src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"></script>
 <script
-	src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"></script>
+	src="<c:url value="/templates/user/js/bootstrap-5.0.2-bootstrap.min.js"/>"></script>

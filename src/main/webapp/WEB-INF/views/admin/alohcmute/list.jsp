@@ -72,8 +72,7 @@ body {
 
 <
 link rel ="stylesheet " href ="https: //cdnjs.cloudflare.com /ajax /libs
-	/font-awesome /5.15.3 /css /all.min.css " integrity ="sha384-ezjw8l5z3kgZsphgjrE9R1o2L3y3IrS2K1TOWvi5uuXlSv5irI2HJLZ5u8U0sDl
-	 " crossorigin ="anonymous "> .modal {
+	/font-awesome /5.15.3 /css /all.min.css " > .modal {
 	display: none; /* Ẩn modal */
 	position: fixed; /* Giữ modal cố định */
 	z-index: 1; /* Đảm bảo modal ở trên cùng */

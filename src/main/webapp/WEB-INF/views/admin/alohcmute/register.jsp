@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ include file="/common/taglib.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 <meta http-equiv="Content-Security-Policy" content=" "/>
 <title>Register - ALOHCMUTE</title>
 <link
-	href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>"
+	href='<c:url value="/templates/user/css/bootstrap-5.0.2-bootstrap.min.css"/>'
 	rel="stylesheet">
 
 <style>
@@ -151,9 +152,9 @@ body {
 		</div>
 	</div>
 
-    <script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"></script>
-    <script src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"></script>
-    <script src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"></script>
+    <script src='<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>'></script>
+    <script src='<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>'></script>
+    <script src='<c:url value="/templates/user/js/bootstrap-5.0.2-bootstrap.min.js"/>'></script>
 	<script>
    	 const csrfToken = document.cookie.replace(/(?:(?:^|.*;\s*)XSRF-TOKEN\s*\=\s*([^;]*).*$)|^.*$/, '$1');
 		var token = $("meta[name='_csrf']").attr("content");

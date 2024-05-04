@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Your Page Title</title>
     <!-- Bootstrap CSS -->
-    <link href="<c:url value="/templates/user/css/bootstrap-4.3.1-bootstrap.min.css"/>" rel="stylesheet">
+    <link href="<c:url value="/templates/user/css/bootstrap-5.0.2-bootstrap.min.css"/>" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link href="<c:url value="/templates/user/css/ajax-font-awesome-5.15.1-all.min.css"/>" rel="stylesheet">
     <!-- Your custom styles -->
@@ -108,7 +108,7 @@
 <!-- Bootstrap JS, Popper.js, jQuery -->
 <script src="<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>"></script>
 <script src="<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>"></script>
-<script src="<c:url value="/templates/user/js/bootstrap-4.3.1-bootstrap.min.js"/>"></script>
+<script src="<c:url value="/templates/user/js/bootstrap-5.0.2-bootstrap.min.js"/>"></script>
 
 </body>
 </html>
