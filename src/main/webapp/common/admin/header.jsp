@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ include file="/common/taglib.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,13 @@
 <title>ALOHCMUTE</title>
 <!-- Bootstrap CSS -->
 <link
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	href='<c:url value="/templates/user/css/bootstrap-5.0.2-bootstrap.min.css"/>'
 	rel="stylesheet">
 <!-- Font Awesome CSS -->
 <link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+	href='<c:url value="/templates/user/css/ajax-font-awesome-5.15.1-all.min.css"/>'
 	rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content=" "/>
 <!-- Your custom styles -->
 <style>
 body {
@@ -144,12 +146,12 @@ body {
 	</section>
 
 	<!-- Bootstrap JS, Popper.js, jQuery -->
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+	<!-- <script src='<c:url value="/templates/user/js/jquery-3.6.0.slim.min.js"/>'></script> -->
+	<script src='<c:url value="/templates/user/js/jquery-3.6.4.min.js"/>'></script> 
 	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		src='<c:url value="/templates/user/js/ajax-1.14.7-popper.min.js"/>'></script>
 	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		src='<c:url value="/templates/user/js/bootstrap-5.0.2-bootstrap.min.js"/>'></script>
 		<script>
    	 const csrfToken = document.cookie.replace(/(?:(?:^|.*;\s*)XSRF-TOKEN\s*\=\s*([^;]*).*$)|^.*$/, '$1');
 		var token = $("meta[name='_csrf']").attr("content");
